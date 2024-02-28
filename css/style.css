@@ -103,6 +103,20 @@ hr {
   background-color: #A668A6;
 }
 
+.btn {
+  margin: 20px;
+}
+
+.btn a {
+  background-color: #A668A6;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 /* HEADER */
 .header {
   background-color: #E7E1DD;
@@ -379,6 +393,55 @@ hr {
 .lightbox-prev:hover,
 .lightbox-next:hover {
   opacity: .8;
+}
+
+/* MODAL */
+.modal-window {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.30);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  & > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background: white;
+  }
+  & hr {
+    margin: 20px 0;
+  }
+  & ul {
+    list-style: none;
+  }
+}
+
+.modal-close {
+  color: #aaa;
+  line-height: 50px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+  &:hover {
+    color: black;
+  }
 }
 
 @media only screen and (max-width: 600px) {
