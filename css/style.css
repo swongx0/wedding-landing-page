@@ -290,7 +290,7 @@ hr {
 }
 
 .section-content {
-  padding: 53px;
+  padding: 20px 53px;
   background-color: #E7E1DD;
   flex: 100%;
 }
@@ -453,11 +453,9 @@ hr {
 
 @media only screen and (min-width: 768px) {
   .header .logo {
-    margin-left: 469px;
     display: flex;
     justify-content: center;
     float: none;
-    width: 50%;
   }
 
   .header li {

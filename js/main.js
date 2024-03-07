@@ -31,8 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'CKIM8246.jpg', 'CKIM8274.jpg', 'CKIM8282.jpg',
         'CKIM8287.jpg', 'CKIM8298.jpg', 'CKIM8306.jpg', 'CKIM8312.jpg',
         'CKIM8313.jpg', 'CKIM8315.jpg', 'CKIM8323.jpg', 'CKIM8327.jpg',
-        'CKIM8331.jpg', 'CKIM8351.jpg', 'CKIM8355.jpg',
-        'CKIM8361.jpg', 'CKIM8370.jpg',
+        'CKIM8331.jpg', 'CKIM8351.jpg', 'CKIM8355.jpg'
     ];
 
     // Filter files containing "CKIM"
