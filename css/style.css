@@ -571,13 +571,29 @@ hr {
     height: 100vh;
   }
 
+  .accordion {
+    margin: 0 auto;
+  }
+
   .hero-text {
     flex: 50%;
     height: 100vh;
   }
 
-  .travel-container {
+  .container {
+    overflow: auto;
+    height: 500px;
+  }
+
+  .main-container {
     display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+  }
+
+  .travel-container {
+    /* display: flex; */
     justify-content: center;
     height: 100%;
     align-items: center;
