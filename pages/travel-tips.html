@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+    <title>Nancy and Moses</title>
+  </head>
+  <body>
+    <svg id="fader" onload="fadeInPage()"></svg>
+    <nav class="header">
+      <a href="../index.html" class="logo">Nancy & Moses</a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="/pages/wedding.html">The Wedding</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="/pages/travel-tips.html">Travel Info</a></li>
+        <li><a href="/pages/travel.html">Accomodations</a></li>
+        <li><a href="/pages/gallery.html">Gallery</a></li>
+        <li><a href="/pages/questions.html">Questions</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-image">
+        <img class="img-wrapper" style="background-image: url('/assets/Flower\ Bomb.jpg')">
+      </div>
+      <div class="hero-text">
+        <div class="travel-container">
+          <h1>Travel Information</h1>
+          
+          <div class="tab-container">
+            <div class="tab-menu">
+                  <ul>
+                     <li><a href="#" class="tab-a active-a" data-id="tab1">California</a></li>
+                     <li><a href="#" class="tab-a" data-id="tab2">Philippines</a></li>
+                  </ul>
+               </div><!--end of tab-menu-->
+               <div  class="tab tab-active" data-id="tab1">
+                <p>Airport: Oakland Internation Airport(OAK) for San Francisco International Airport(SFO)</p>
+                
+               </div><!--end of tab one--> 
+            
+               <div  class="tab " data-id="tab2">
+                <p>Airport: Ninoy Aquino International Airport (MNL)</p>
+                <p>transportation options:
+                </p>
+                </div>
+               </div><!--end of tab two--> 
+            </div><!--end of container-->
+        </div>
+    </div>
+  </body>
+</html>
