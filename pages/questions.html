@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/index.js"></script>
     <title>Nancy and Moses</title>
   </head>
@@ -30,109 +31,157 @@
       <div class="hero-text">
         <div class="travel-container">
           <h1>FAQ</h1>
-          <div class="container">
           
-            <div class="accordion">
+          <div class="tab-container">
+            <div class="tab-menu">
+                  <ul>
+                     <li><a href="#" class="tab-a active-a" data-id="tab1">California</a></li>
+                     <li><a href="#" class="tab-a" data-id="tab2">Philippines</a></li>
+                  </ul>
+               </div><!--end of tab-menu-->
+               <div  class="tab tab-active" data-id="tab1">
+                <div class="container">
           
-              <div class="option">
-                <input type="checkbox" id="toggle1" class="toggle" />
-               <label class="title" for="toggle1">What should I wear? Is there a dress code?
-                </label>
-                <div class="content">
-                  <p>Dress code is formal. Just don’t match the bride.</p>
+                  <div class="accordion">
+                
+                    <div class="option">
+                      <input type="checkbox" id="toggle1" class="toggle" />
+                     <label class="title" for="toggle1">What should I wear? Is there a dress code?
+                      </label>
+                      <div class="content">
+                        <p>Dress code is formal. Just don’t wear red or white.</p>
+                      </div>
+                    </div>
+                
+                    <div class="option">
+                      <input type="checkbox" id="toggle2" class="toggle" />
+                      <label class="title" for="toggle2">
+                        Will the ceremony and reception be indoors or outdoors?
+      
+                      </label>
+                      <div class="content">
+                        <p> US: Tea ceremony and banquet are indoors. <br>
+                          Philippines: Wedding ceremony is outdoors.          
+                          Reception is indoors.</p>
+                      </div>
+                    </div>
+                
+                    <div class="option">
+                      <input type="checkbox" id="toggle3" class="toggle" />
+                      <label class="title" for="toggle3">
+                        What time should I arrive?
+                      </label>
+                      <div class="content">
+                        <p>The tea ceremony will start at 9AM, please       
+                          arrive by 8:30AM. The banquet starts at 5:30 PM.  
+                          There will be a 30 min grace period to get seated.</p>
+                      </div>
+                    </div>
+      
+                    <div class="option">
+                      <input type="checkbox" id="toggle4" class="toggle" />
+                      <label class="title" for="toggle4">
+                        Where should guests park? Is parking free?
+                      </label>
+                      <div class="content">
+                        <p>There is free parking in front of the restaurant.</p>
+                      </div>
+                    </div>
+      
+                    <div class="option">
+                      <input type="checkbox" id="toggle5" class="toggle" />
+                      <label class="title" for="toggle5">
+                        Are kids welcome?
+                      </label>
+                      <div class="content">
+                        <p>Yes</p>
+                      </div>
+                    </div>
+      
+                    <div class="option">
+                      <input type="checkbox" id="toggle6" class="toggle" />
+                      <label class="title" for="toggle6">
+                        When is the RSVP deadline? Do I need to mail back my RSVP or can I do it online?
+                      </label>
+                      <div class="content">
+                        <p>August 26th. Online preferably, but mail is okay.</p>
+                      </div>
+                    </div>
+      
+                    <div class="option">
+                      <input type="checkbox" id="toggle7" class="toggle" />
+                      <label class="title" for="toggle7">
+                        Will transportation be provided from the airport to hotels?
+                      </label>
+                      <div class="content">
+                        <p>No</p>
+                      </div>
+                    </div>
+      
+                    <div class="option">
+                      <input type="checkbox" id="toggle8" class="toggle" />
+                      <label class="title" for="toggle8">
+                        I still have questions, what is the best way to contact you?
+                      </label>
+                      <div class="content">
+                        <p>Send us an email at mosesnancywedding@gmail.com.</p>
+                      </div>
+                    </div>
+                
+                  </div>
                 </div>
-              </div>
+               </div><!--end of tab one--> 
+            
+               <div  class="tab " data-id="tab2">
+                <div class="container">
           
-              <div class="option">
-                <input type="checkbox" id="toggle2" class="toggle" />
-                <label class="title" for="toggle2">
-                  Will the ceremony and reception be indoors or outdoors?
-
-                </label>
-                <div class="content">
-                  <p> US: Tea ceremony and banquet are indoors. <br>
-                    Philippines: Wedding ceremony is outdoors.          
-                    Reception is indoors.</p>
-                </div>
-              </div>
-          
-              <div class="option">
-                <input type="checkbox" id="toggle3" class="toggle" />
-                <label class="title" for="toggle3">
-                  What time should I arrive?
-                </label>
-                <div class="content">
-                  <p>US: If you want to attend the tea ceremony, please       
-                    arrive by 9AM. The banquet starts at 5:30 PM.  
-                    There will be a 30 min grace period to get seated            
-                    and we can start serving. <br>
-                    Philippines: If you want to attend the ceremony, it    
-                    will start at 3:30PM. Please be seated by 3:30PM.   
-                    Reception will start at 6PM. It’s in the same area.
-                    *If you’re asking about when to come to the           
-                    Philippines: 2 day in advance. The flight is   
-                    about 14 hrs.</p>
-                </div>
-              </div>
-
-              <div class="option">
-                <input type="checkbox" id="toggle4" class="toggle" />
-                <label class="title" for="toggle4">
-                  Where should guests park? Is parking free?
-                </label>
-                <div class="content">
-                  <p>US: Free parking. It’s in front of the restaurant. <br>
-                    Philippines: Free parking. Coordinator will direct    
-                    guests to parking area.</p>
-                </div>
-              </div>
-
-              <div class="option">
-                <input type="checkbox" id="toggle5" class="toggle" />
-                <label class="title" for="toggle5">
-                  Are kids welcome?
-                </label>
-                <div class="content">
-                  <p>Yes.</p>
-                </div>
-              </div>
-
-              <div class="option">
-                <input type="checkbox" id="toggle6" class="toggle" />
-                <label class="title" for="toggle6">
-                  When is the RSVP deadline? Do I need to mail back my RSVP or can I do it online?
-                </label>
-                <div class="content">
-                  <p>August 25. Online preferably, but mail is okay.</p>
-                </div>
-              </div>
-
-              <div class="option">
-                <input type="checkbox" id="toggle7" class="toggle" />
-                <label class="title" for="toggle7">
-                  Will transportation be provided from the airport to hotels?
-                </label>
-                <div class="content">
-                  <p>US: No. <br>
-                    Philippines: No</p>
-                </div>
-              </div>
-
-              <div class="option">
-                <input type="checkbox" id="toggle8" class="toggle" />
-                <label class="title" for="toggle8">
-                  I still have questions, what is the best way to contact you?
-                </label>
-                <div class="content">
-                  <p>Txt or call my mobile: (510)318-2067.
-                    Leave a question on the website and we will get    
-                    back to you when we have time
-                    Email mosesnancywedding@gmail.com.</p>
-                </div>
-              </div>
-          
-            </div>
-          </div>
+                  <div class="accordion">
+                
+                    <div class="option">
+                      <input type="checkbox" id="toggle9" class="toggle" />
+                     <label class="title" for="toggle9">What should I wear? Is there a dress code?
+                      </label>
+                      <div class="content">
+                        <p>Dress code is formal. Just don’t wear red or white.</p>
+                      </div>
+                    </div>
+                
+                    <div class="option">
+                      <input type="checkbox" id="toggle10" class="toggle" />
+                      <label class="title" for="toggle10">
+                        Will the ceremony and reception be indoors or outdoors?
+                      </label>
+                      <div class="content">
+                        <p>Wedding ceremony is outdoors.          
+                          Reception is indoors.</p>
+                      </div>
+                    </div>
+                
+                    <div class="option">
+                      <input type="checkbox" id="toggle11" class="toggle" />
+                      <label class="title" for="toggle11">
+                        What time should I arrive?
+                      </label>
+                      <div class="content">
+                        <p>The ceremony will start at 3:30PM, so please be seated before 3:30PM.   
+                          The reception will start at 6PM in the same location.
+                          *Plan to arrive to the Philippines 2 day in advance, the flight is   
+                          about 14 hrs long and an additional 2 hours to drive to the venue.</p>
+                      </div>
+                    </div>
+      
+                    <div class="option">
+                      <input type="checkbox" id="toggle12" class="toggle" />
+                      <label class="title" for="toggle12">
+                        Where should guests park? Is parking free?
+                      </label>
+                      <div class="content">
+                        <p>There is free parking. The coordinator will direct guests to the parking area.</p>
+                      </div>
+                    </div>
+                  </div>
+               </div><!--end of tab two--> 
+            </div><!--end of container-->
         </div>
     </div>
   </body>
