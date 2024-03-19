@@ -463,6 +463,18 @@ hr {
   height: 100%;
 }
 
+.travel-tip-heading {
+  color: #7C8A75;
+  text-align: center !important; 
+  font-style: italic; 
+  padding: 0 3rem;
+  text-decoration: underline;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
 /* RSVP */
 .tally-section {
   padding-top: 3rem;
