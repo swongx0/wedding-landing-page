@@ -64,6 +64,11 @@ h3 {
   color: #7C8A75;
 }
 
+h4 {
+  font-size: 38px;
+  font-family: 'Nanum Myeongjo', serif;  
+ }
+
 p {
   font-size: 18px;
   font-weight: 400;
@@ -130,6 +135,25 @@ hr {
 
 .subheading-color {
   color: #7C8A75;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.62);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.6px);
+  -webkit-backdrop-filter: blur(3.6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+blockquote {
+  padding: 30px;
+  font-size: 20px;
+  font-family: 'Nanum Myeongjo';
+  font-style: italic;
+  background-color: #7C8A75;
+  width: 50%;
+  margin: 20px auto;
 }
 
 /* HEADER */
@@ -451,10 +475,78 @@ hr {
 }
 .tab p{
 	color: rgba(0,0,0,0.6);
-	text-align: justify;
+	text-align: center;
 }
 .tab-active{
 	display: block;
+}
+
+.tab-custom {
+  padding: 15px 50px !important;
+}
+
+.tab-menu .tab-custom-margin {
+  margin: 0 15px;
+}
+
+/* TRAVEL TIPS*/
+.california-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 53px;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  margin: 1rem;
+}
+
+.snip1518 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.3px);
+  -webkit-backdrop-filter: blur(2.3px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  margin: 1rem;
+}
+
+.snip1518 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1518 img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+.snip1518 figcaption {
+  padding: 10%;
+  padding-bottom: calc(25%);
+}
+
+.snip1518 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
 }
 
 /* TRAVEL */
@@ -664,6 +756,33 @@ hr {
     justify-content: center;
     height: 100%;
     align-items: center;
+  }
+
+  .california-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px 53px;
+    justify-content: center;
+  }
+
+  .california-container:before,
+  .california-container:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .section {
+    float: left;
+    width: 50%; /* Each grey div takes up half the container width */
+    background-color: #EDEDED; /* Set grey background color */
+    height: auto; /* Set height as required */
+    border-radius: 15px;
+    padding: 1rem 2rem;
+  }
+
+  .section:last-child {
+    width: calc(100% - 50%); /* Adjust width for the last child */
   }
 
   .section-header {

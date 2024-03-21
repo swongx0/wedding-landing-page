@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/index.js"></script>
     <title>Nancy and Moses</title>
   </head>
@@ -16,15 +17,54 @@
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
       <ul class="menu">
         <li><a href="/pages/wedding.html">The Wedding</a></li>
-        <li><a href="#">Our Story</a></li>
-        <li><a href="/pages/travel-tips.html">Travel Info</a></li>
+        <li><a href="/pages/our-story.html">Our Story</a></li>
         <li><a href="/pages/travel.html">Accomodations</a></li>
+        <li><a href="/pages/travel-tips.html">Travel Info</a></li>
         <li><a href="/pages/gallery.html">Gallery</a></li>
         <li><a href="/pages/questions.html">Questions</a></li>
       </ul>
     </nav>
 
     <div class="hero">
+      <div class="hero-image">
+        <img class="img-wrapper" style="background-image: url('/assets/Flower\ Bomb.jpg')">
+      </div>
+      <div class="hero-text">
+        <div class="travel-container">
+          <h1>Accomodations</h1>
+          
+          <div class="tab-container">
+            <div class="tab-menu">
+                  <ul>
+                     <li><a href="#" class="tab-a active-a" data-id="tab1">California</a></li>
+                     <li><a href="#" class="tab-a" data-id="tab2">Manila</a></li>
+                  </ul>
+               </div><!--end of tab-menu-->
+               <div  class="tab tab-active" data-id="tab1">
+                <div class="container">
+                  <p style="font-size: 14px; font-style: italic; padding: 0 3rem">Note: If you're visiting from out of town, we recommend booking an Airbnb in Alameda, Jack London, or Emeryville. Please find some of our top recommendations listed below including direct links. We hope this helps!</p>
+                  <div class="subheading-pad">
+                      <h3 class="content-pad" style="margin-top: 0">California</h3>
+                        <p class="remove-margin"><a href="https://www.wyndhamhotels.com/hawthorn-extended-stay/alameda-california/hawthorn-suites-by-wyndham-oakland-alameda/overview">Hawthorn Suites by Wyndham</a></p> <br>
+                        <p class="remove-margin"><a href="https://www.bestwestern.com/en_US/book/hotel-rooms.05711.html?iata=00171880&ssob=BLBWI0004G&cid=BLBWI0004G:google:gmb:05711">Best Western Plus Bayside Hotel</a></p> <br>
+                        <p class="remove-margin"><a href="https://www.airbnb.com/rooms/712189895828999030?adults=6&check_in=2025-02-06&check_out=2025-02-10&source_impression_id=p3_1710817887_ZtIhdzbzNhUUnvSl&previous_page_section_name=1000&federated_search_id=ec3a1aac-52b4-4bcf-9fdd-b544bc22ef18">Airbnb</a></p> <br>
+                  </div>
+                </div>
+               </div><!--end of tab one--> 
+               <div  class="tab " data-id="tab2">
+                <div class="container">
+                  <h3 class="content-pad">Manila</h3>
+                  <p class="remove-margin"><a href="https://www.agoda.com/hotel-dominique/hotel/tagaytay-ph.html?cid=1844104">Hotel Dominique</a></p> <br>
+                  <p class="remove-margin"><a href="https://questhotelsandresorts.com/tagaytay/">Quest Hotel Tagaytay</a></p> <br>
+                  <p class="remove-margin"><a href="https://hotelcarlito.com/">Hotel Carlito Tagaytay</a></p> <br>
+                  <p class="remove-margin"><a href="https://www.wyndhamhotels.com/days-inn/tagaytay-city-philippines/days-hotel-tagaytay/overview">Days Hotel</a></p>
+                </div>
+               </div><!--end of tab two--> 
+            </div><!--end of container-->
+        </div>
+    </div>
+
+    <!-- <div class="hero">
       <div class="hero-image">
         <img class="img-wrapper" style="background-image: url('/assets/NancyMoses_Travel-Image.jpg')">
       </div>
@@ -47,6 +87,6 @@
           </div>
         </div>
       </div>
-  </div>
+  </div> -->
   </body>
 </html>
