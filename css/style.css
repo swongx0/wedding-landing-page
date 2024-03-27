@@ -147,11 +147,11 @@ hr {
 }
 
 blockquote {
-  padding: 30px;
   font-size: 20px;
   font-family: 'Nanum Myeongjo';
+  font-weight: 600;
   font-style: italic;
-  background-color: #7C8A75;
+  color: #7C8A75;
   width: 65%;
   margin: 20px auto;
 }
