@@ -319,6 +319,7 @@ blockquote {
   padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
+  background-color: #E7E1DD;
   text-align: center;
 }
 
@@ -498,6 +499,7 @@ blockquote {
 
 .section {
   background: rgba(255, 255, 255, 0.37);
+  padding: 20px;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2.3px);
@@ -795,7 +797,6 @@ blockquote {
   }
 
   .page-section {
-    background-color: #E7E1DD;
     padding-top: 0;
   }
 
